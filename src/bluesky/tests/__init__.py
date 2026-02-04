@@ -1,14 +1,13 @@
 import os
 from types import ModuleType
-from typing import Optional
 
 import pytest
 
 # some module level globals.
-ophyd: Optional[ModuleType]
+ophyd: ModuleType | None
 ophyd = None
 ophyd_reason = ""
-ophyd_async: Optional[ModuleType]
+ophyd_async: ModuleType | None
 ophyd_async = None
 ophyd_async_reason = ""
 
